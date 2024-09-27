@@ -38,7 +38,7 @@ public class PasswordGenerator {
 		
 		System.out.println("Che giorno sei nato/a?");
 		
-		String day = birthDay.next();
+		int day = birthDay.nextInt();
 		
 		
 		//chiedo all'utente il mese di nascita
@@ -46,7 +46,7 @@ public class PasswordGenerator {
 		
 		System.out.println("di quale mese?");
 		
-		String month = birthMonth.next();
+		int month = birthMonth.nextInt();
 		
 		
 		//chiedo all'utente l'anno di nascita
@@ -54,14 +54,15 @@ public class PasswordGenerator {
 		
 		System.out.println("In che anno sei nato?");
 		
-		String year = birthYear.next();
+		int year = birthYear.nextInt();
 		
+		int somma = day + month + year;
 		
 		//genero la password personalizzata dell'utente
 		
 		System.out.println("Ciao " + name + " ecco la tua password personalizzata:");
 		
-		System.out.println(name + "-" + surname + "-" + color + "-" + year);
+		System.out.println(name + "-" + surname + "-" + color + "-" + somma);
 		
 		
 		
